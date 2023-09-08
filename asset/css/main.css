@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+header{
+    background-color: rgb(255, 127, 7);
+    color: white;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 90vw;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.header h1{
+    display: block;
+    border-bottom: 1.5px solid rgba(245, 245, 245, 0.61) ;
+    cursor: pointer;
+}
+
+#btn-menu{
+    font-size: 32px;
+    cursor: pointer;
+}
+
+#menu{
+    background-color: rgb(212, 106, 6);
+}
+
+#option-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding-bottom: 4px;
+    background-color:rgb(212, 106, 6);
+}
+
+#option-menu li{
+    display: block;
+    text-align: center;
+    list-style: none;
+    padding: 8px;
+    cursor: pointer;
+    width: 20%;
+    border-bottom: 1px solid white;
+}
+
+#option-menu li a{
+    text-decoration: none;
+    color: white;
+}
+
+li:hover{
+    background-color: rgba(235, 233, 231, 0.329);
+}
+
+
+.sobre{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.sobre h2{
+    width: 100%;
+    color: rgba(255, 124, 1, 0.815);
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(255, 124, 1, 0.815);
+}
+
+.sobre img{
+    width: 100%;
+}
+
+.sobre p{
+    color: rgb(58, 29, 2);
+    padding-top: 10px;
+    text-indent: 20px;
+}
+
+#produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.produtos h2{
+    width: 100%;
+    color: rgba(255, 124, 1, 0.815);
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(255, 124, 1, 0.815);
+}
+
+#produto h3{
+    color: rgb(212, 106, 6);
+    margin-bottom: 5px;
+}
+
+#produto img{
+    width: 200px;
+    padding-bottom: 10px ;
+}
+
+#produto p{
+    color: rgb(58, 29, 2);
+
+}
+#produto p strong{
+    color: rgb(15, 8, 1);
+
+}
+
+#btn-carrinho{
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    background-color: rgb(247, 120, 2);
+    border: none;
+    color: white;
+    border-radius: 6px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+#btn-carrinho:hover{
+    background-color: rgb(255, 139, 30);
+}
+
+@media screen  and (min-width: 768px) and (max-width: 1023px){
+
+    .container{
+        max-width: 90%;
+    }
+
+    .sobre{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 20px;
+    }
+    .produtos{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-produtos{
+        display: grid;
+        grid-template-columns: 48.5% 48.5%;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+
+    .container{
+        max-width: 1024px;;
+    }
+
+    .sobre{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 20px;
+    }
+    .produtos{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-produtos{
+        display: grid;
+        grid-template-columns: 22.75% 22.75% 22.75% 22.75%;
+        column-gap: 5%;
+    }
+    
+    
+}
+
+@media screen and (min-width: 1024px) {
+
+    .container{
+        max-width: 1024px;;
+    }
+
+    #option-menu{
+        flex-direction: row;
+        border: none;
+    }
+
+    .sobre{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 20px;
+    }
+    .produtos{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-produtos{
+        display: grid;
+        grid-template-columns: 22.75% 22.75% 22.75% 22.75%;
+        column-gap: 5%;
+    }
+    
+    
+}
+
+
