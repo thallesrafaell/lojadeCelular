@@ -38,6 +38,7 @@ header{
 }
 
 #menu{
+    display: none;
     background-color: rgb(212, 106, 6);
 }
 
